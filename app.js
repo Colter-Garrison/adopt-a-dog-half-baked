@@ -8,7 +8,7 @@ const dogListContainer = document.getElementById('dog-list-container');
 // render and append all dog cards to the container
 async function loadData() {
     const dogs = await getDogs();
-    console.log(dogs);
+    // console.log(dogs);
     
     for (let dog of dogs) {
         const dogDiv = renderDogCard(dog);
